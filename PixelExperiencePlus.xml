@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<!-- PixelExperiencePlus remote start-->
+  <remote name="PEP"
+          fetch="https://github.com/PixelExperiencePlus"
+          revision="twelve-plus-wip" />
+<!-- PixelExperiencePlus remote end-->
+
+
+<!-- PixelExperiencePlus remove start-->
+  <remove-project name="frameworks_av" />
+  <remove-project name="frameworks_base" />
+  <remove-project name="packages_apps_Settings" />
+  <remove-project name="packages_apps_CarrierConfig" />
+  <remove-project name="packages_apps_TouchGestures" />
+  <remove-project name="packages_overlays_ThemeIcons" />
+  <remove-project name="packages_resources_devicesettings" />
+  <remove-project name="packages_services_Telephony" />
+  <remove-project name="vendor_aosp" />
+<!-- PixelExperiencePlus remove end-->
+
+
+<!-- PixelExperiencePlus add start-->
+  <project path="frameworks/av"
+	   name="PixelExperience_frameworks_av"
+	   remote="PEP" />
+
+  <project path="frameworks/base"
+	   name="PixelExperience_frameworks_base"
+	   remote="PEP" />
+
+  <project path="packages/apps/Settings"
+	   name="PixelExperience_packages_apps_Settings"
+	   remote="PEP" />
+
+  <project path="packages/apps/CarrierConfig"
+	   name="PixelExperience_packages_apps_CarrierConfig"
+	   remote="PEP" />
+
+  <project path="packages/apps/GameSpace"
+	   name="PixelExperience_packages_apps_GameSpace"
+	   remote="PEP" />
+
+  <project path="packages/apps/TouchGestures"
+	   name="PixelExperience_packages_apps_TouchGestures"
+	   remote="PEP" />
+
+  <project path="packages/overlays/ThemeIcons"
+	   name="PixelExperience_packages_overlays_ThemeIcons"
+	   remote="PEP" />
+
+  <project path="packages/resources/devicesettings"
+	   name="PixelExperience_packages_resources_devicesettings"
+	   remote="PEP" />
+	
+  <project path="packages/services/Telephony"
+	   name="PixelExperience_packages_services_Telephony"
+	   remote="PEP" />
+
+  <project path="vendor/aosp"
+	   name="PixelExperience_vendor_aosp"
+	   remote="PEP" />
+<!-- PixelExperiencePlus add end-->
+
+</manifest>
+
+
+
+
+
+
+
+
+
+
+
+

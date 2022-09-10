@@ -9,11 +9,13 @@
 
 
 <!-- PixelExperiencePlus remove start-->
+  <remove-project name="build" />
   <remove-project name="frameworks_av" />
   <remove-project name="frameworks_base" />
-  <remove-project name="packages_apps_Settings" />
   <remove-project name="packages_apps_CarrierConfig" />
+  <remove-project name="packages_apps_Settings" />
   <remove-project name="packages_apps_TouchGestures" />
+  <remove-project name="packages_apps_Updates" />
   <remove-project name="packages_overlays_ThemeIcons" />
   <remove-project name="packages_resources_devicesettings" />
   <remove-project name="packages_services_Telephony" />
@@ -22,16 +24,22 @@
 
 
 <!-- PixelExperiencePlus add start-->
+  <project path="build/make" name="PixelExperience_build" remote="PEP">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
   <project path="frameworks/av"
 	   name="PixelExperience_frameworks_av"
 	   remote="PEP" />
 
   <project path="frameworks/base"
 	   name="PixelExperience_frameworks_base"
-	   remote="PEP" />
-
-  <project path="packages/apps/Settings"
-	   name="PixelExperience_packages_apps_Settings"
 	   remote="PEP" />
 
   <project path="packages/apps/CarrierConfig"
@@ -42,8 +50,16 @@
 	   name="PixelExperience_packages_apps_GameSpace"
 	   remote="PEP" />
 
+  <project path="packages/apps/Settings"
+	   name="PixelExperience_packages_apps_Settings"
+	   remote="PEP" />
+
   <project path="packages/apps/TouchGestures"
 	   name="PixelExperience_packages_apps_TouchGestures"
+	   remote="PEP" />
+
+  <project path="packages/apps/Updates"
+	   name="PixelExperience_packages_apps_Updates"
 	   remote="PEP" />
 
   <project path="packages/overlays/ThemeIcons"

@@ -10,14 +10,24 @@
 <!-- PixelExperiencePlus remove start-->
   <remove-project name="build" />
   <remove-project name="device_custom_sepolicy" />
+  <remove-project name="device_qcom_sepolicy" />
+  <remove-project name="device_qcom_sepolicy-legacy-um" />
+  <remove-project name="device_qcom_sepolicy_vndr" />
+  <remove-project name="device_qcom_sepolicy_vndr-legacy-um" />
   <remove-project name="frameworks_av" />
   <remove-project name="frameworks_base" />
+  <remove-project name="frameworks_opt_net_ims" />
+  <remove-project name="frameworks_opt_telephony" />
+  <remove-project name="hardware_qcom-caf_sm8350_audio" />
+  <remove-project name="hardware_qcom-caf_sm8350_display" />
+  <remove-project name="hardware_qcom-caf_sm8350_media" />
   <remove-project name="packages_apps_CarrierConfig" />
   <remove-project name="packages_apps_Settings" />
   <remove-project name="packages_apps_TouchGestures" />
   <remove-project name="packages_apps_Updates" />
   <remove-project name="packages_overlays_ThemeIcons" />
   <remove-project name="packages_services_Telephony" />
+  <remove-project name="system_core" />
   <remove-project name="system_update_engine" />
   <remove-project name="vendor_aosp" />
   <remove-project name="vendor_pixel-framework" />
@@ -40,12 +50,48 @@
 	   name="PixelExperience_device_custom_sepolicy"
 	   remote="PE-Plus" />
 
+  <project path="device/qcom/sepolicy"
+	   name="PixelExperience_device_qcom_sepolicy"
+	   remote="PE-Plus" />
+
+  <project path="device/qcom/sepolicy-legacy-um"
+	   name="PixelExperience_device_qcom_sepolicy-legacy-um"
+	   remote="PE-Plus" />
+
+  <project path="device/qcom/sepolicy_vndr"
+	   name="PixelExperience_device_qcom_sepolicy_vndr"
+	   remote="PE-Plus" />
+
+  <project path="device/qcom/sepolicy_vndr-legacy-um"
+	   name="PixelExperience_device_qcom_sepolicy_vndr-legacy-um"
+	   remote="PE-Plus" />
+
   <project path="frameworks/av"
 	   name="PixelExperience_frameworks_av"
 	   remote="PE-Plus" />
 
   <project path="frameworks/base"
 	   name="PixelExperience_frameworks_base"
+	   remote="PE-Plus" />
+
+  <project path="frameworks/opt/net/ims"
+	   name="PixelExperience_frameworks_opt_net_ims"
+	   remote="PE-Plus" />
+
+  <project path="frameworks/opt/telephony"
+	   name="PixelExperience_frameworks_opt_telephony"
+	   remote="PE-Plus" />
+
+  <project path="hardware/qcom-caf/sm8350/audio"
+	   name="PixelExperience_hardware_qcom-caf_sm8350_audio"
+	   remote="PE-Plus" />
+
+  <project path="hardware/qcom-caf/sm8350/display"
+	   name="PixelExperience_hardware_qcom-caf_sm8350_display"
+	   remote="PE-Plus" />
+
+  <project path="hardware/qcom-caf/sm8350/media"
+	   name="PixelExperience_hardware_qcom-caf_sm8350_media"
 	   remote="PE-Plus" />
 
   <project path="packages/apps/CarrierConfig"
@@ -74,6 +120,10 @@
 
   <project path="packages/services/Telephony"
 	   name="PixelExperience_packages_services_Telephony"
+	   remote="PE-Plus" />
+
+  <project path="system/core"
+	   name="PixelExperience_system_core"
 	   remote="PE-Plus" />
 
   <project path="system/update_engine"

@@ -28,9 +28,11 @@
   <remove-project name="packages_overlays_ThemeIcons" />
   <remove-project name="packages_services_Telephony" />
   <remove-project name="system_core" />
+  <remove-project name="system_sepolicy" />
   <remove-project name="system_update_engine" />
   <remove-project name="vendor_aosp" />
   <remove-project name="vendor_pixel-framework" />
+  <remove-project name="vendor_qcom_opensource_vibrator" />
 <!-- PixelExperiencePlus remove end-->
 
 
@@ -126,6 +128,10 @@
 	   name="PixelExperience_system_core"
 	   remote="PE-Plus" />
 
+  <project path="system/sepolicy"
+	   name="PixelExperience_system_sepolicy"
+	   remote="PE-Plus" />
+
   <project path="system/update_engine"
 	   name="PixelExperience_system_update_engine"
 	   remote="PE-Plus" />
@@ -136,6 +142,10 @@
 
   <project path="vendor/pixel-framework"
 	   name="PixelExperience_vendor_pixel-framework"
+	   remote="PE-Plus" />
+
+  <project path="vendor/qcom/opensource/vibrator"
+	   name="PixelExperience_vendor_qcom_opensource_vibrator"
 	   remote="PE-Plus" />
 <!-- PixelExperiencePlus add end-->
 
